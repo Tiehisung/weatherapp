@@ -55,25 +55,26 @@ async function getWeatherInfo(e) {
           </tr>
         </tbody>
       </table>
+      <br/>
+      <hr/>
   `;
-  dataSection.innerHTML += weatherTable;
+  dataSection.innerHTML = weatherTable + dataSection.innerHTML;
 }
 const form = document.getElementById("my-form");
 form.addEventListener("submit", (e) => getWeatherInfo(e));
 
-const modalEl=document.querySelector("#modal")
-const modalContentCta=document.querySelector("#modal-content-cta")
-
+const modalEl = document.querySelector("#modal");
+const modalContentCta = document.querySelector("#modal-content-cta");
 
 //Show modal
 const showHelp = () => {
-    modalEl.style.visibility = "visible";
+  modalEl.style.visibility = "visible";
 };
-const help = document.getElementById("help");
-help.addEventListener("click", () => showHelp());
+const helpBtn = document.getElementById("help");
+helpBtn.addEventListener("click", () => showHelp());
 
 //Hide modal
 const hideHelp = () => {
-    modalEl.style.visibility = "hidden";
+  modalEl.style.visibility = "hidden";
 };
-modalEl.addEventListener("click",hideHelp)
+modalEl.addEventListener("click", hideHelp);
