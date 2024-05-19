@@ -1,0 +1,117 @@
+form {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border: solid 1px rgb(239, 198, 191);
+  background-color: gainsboro;
+  margin: 2rem auto;
+}
+form:focus-within {
+  outline: 1px rgb(227, 185, 185) solid;
+  box-shadow: 1px 0 5px 0 rgb(18, 74, 94);
+}
+
+form div {
+  display: grid;
+}
+form div small {
+  margin: auto;
+  color: gray;
+  font-weight: lighter;
+}
+
+#search-btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#search-btn img {
+  height: 2rem;
+  width: 2rem;
+}
+.search-input {
+  height: 3rem;
+  flex-grow: 1;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: #fafafa;
+  width: 120px;
+}
+
+/* Data section */
+#data-section {
+  min-height: 60vh;
+  min-width: 40vw;
+  position: relative;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #4d4d4d;
+  padding: 1rem;
+}
+#data-section table {
+  margin: auto;
+}
+
+.value-td {
+  border-bottom: gray solid;
+  font-size: 20px;
+  padding: 4px 1rem;
+  color: rgb(255, 194, 81);
+  padding-top: 1rem;
+}
+body {
+  background-color: gray;
+  color: #fafafac8;
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+#help {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+/* Modal */
+
+#modal {
+  position: fixed;
+  inset: 0 0;
+  background-color: #38393995;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+  transition-delay: 0ms;
+  transition-duration: 200ms;
+}
+
+#modal div{
+    margin: auto;
+    width: 80%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;color: orange;
+    padding: 10px;
+    box-shadow:  0 0 10px 0 rgb(222, 87, 34);
+}

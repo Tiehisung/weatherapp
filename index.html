@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soskode Weathers</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <p
+      style="
+        padding: 0;
+        color: #8be6e9;
+        text-align: center;
+        text-shadow: 3px 3px 2px #000000b3;
+      "
+    >
+      Get weather information about your city
+    </p>
+    <form id="my-form">
+      <div>
+        <small>Latitude</small>
+        <input
+          min="-90"
+          max="90"
+          autofocus
+          type="number"
+          id="latitude"
+          class="search-input"
+          placeholder="Latitude"
+        />
+      </div>
+      <div>
+        <small>Longitude</small>
+        <input
+          autofocus
+          type="number"
+          min="-180"
+          max="180"
+          id="longitude"
+          class="search-input"
+          placeholder="Longitude"
+        />
+      </div>
+
+      <button id="search-btn">
+        <img src="./assets/grey_Search.png" />
+      </button>
+    </form>
+
+    <section id="data-section">
+      <button id="help">Help</button>
+    </section>
+
+    <!-- Help modal -->
+    <div id="modal">
+      <div id="modal-content-cta" onclick="">
+        <p>
+          Enter the latitude and longitude values of your location. Click on the
+          search icon or press enter to display it&apos;s weather conditions.
+        </p>
+      </div>
+    </div>
+
+    <footer>by sosdev@nonihub-web</footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
